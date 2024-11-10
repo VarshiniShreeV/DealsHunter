@@ -23,17 +23,16 @@ with open("product_deals.csv", mode="w", newline="", encoding="utf-8") as file:
         
         soup = BeautifulSoup(response.text, 'html.parser')
 
-        # Find all product items
         all_items = soup.find_all("div", class_="product-item-detail")
         
         if not all_items: 
             print(f"No products found on page {current_page}. Stopping scraper.")
-            break  # Stop scraping when no products are found
+            break 
 
         for item in all_items:
             product = {}
 
-            # Extracting discount 
+            # Extracting product's discount 
             discount = item.find("div", class_="discount")
             if discount:
                 product['Discount'] = discount.text.strip()

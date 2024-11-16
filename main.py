@@ -2,8 +2,11 @@ import requests
 from bs4 import BeautifulSoup
 import csv
 import streamlit as st
+import pandas as pd
 
 base_url = "https://dealsheaven.in/?page="
+
+csv_filename = "product_deals.csv"
 
 st.write("# Deals Scraper")
 st.write("Enter the range of pages you would like to scrape")
@@ -28,7 +31,6 @@ try:
             writer.writerow(["Title", "Image", "Price", "Discount", "Special Price", "Link", "Rating"])
 
             for current_page in range(start, end + 1):  
-                st.write(f"Scraping page {current_page}...")
                 url = base_url + str(current_page)
                 response = requests.get(url)
 
@@ -95,6 +97,10 @@ try:
                     writer.writerow([product.get('Title', 'N/A'), f'=HYPERLINK("{product.get("Image", "N/A")}","Image")', product.get('Price', 'N/A'), product.get('Discount', 'N/A'), product.get('Special Price', 'N/A'), f'= HYPERLINK("{product.get("Link", "N/A")}","Link")', product.get('Rating', 'N/A')])
 
         st.write("Data scraping and saving completed.") # Displays in the UI
+        
+        if st.button("Show"):
+            output = pd.read_csv(csv_filename)
+            st.write(output) 
 
 except ValueError:
     st.error("Please enter valid integers for the starting and ending page.")

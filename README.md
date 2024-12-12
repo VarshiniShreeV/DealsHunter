@@ -1,8 +1,6 @@
 # DealsHunter
 
-This project is built during my python stack internship @ Infosys Springboard
-
-This branch is maintained by [VarshiniShreeV](https://github.com/VarshiniShreeV)
+This project is built during my python stack internship @ Infosys Springboard.
 
 ### Dependencies:
 1. Python (version: 3.13.0 or above)

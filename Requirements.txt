@@ -1,0 +1,15 @@
+# Python version used
+python_version >= "3.8"
+
+# Core dependencies
+streamlit==1.25.0
+pandas==2.1.1
+
+# BeautifulSoup for DealsHunter
+beautifulsoup4==4.13.0
+
+# Selenium for Jobs Scraper
+selenium==4.12.0
+
+# Additional utilities
+requests==2.31.0

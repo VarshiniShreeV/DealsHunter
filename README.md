@@ -47,15 +47,15 @@ This repository showcases a collection of Python-based scraping projects develop
 1. Ensure Python (version 3.8 or above) is installed on your system.  
 2. Clone this repository:
    ```bash
-   git clone https://github.com/VarshiniShreeV/ScrapingProjects.git
+   git clone https://github.com/VarshiniShreeV/Scrapers.git
    ```
 3. Navigate to the project directory:  
    ```bash
-   cd ScrapingProjects
+   cd Scrapers
    ```
 4. Install dependencies:
    ```bash
-   pip install -r requirements.txt
+   pip install -r Requirements.txt
    ```
 
 ---

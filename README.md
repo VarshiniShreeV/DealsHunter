@@ -86,13 +86,30 @@ This repository showcases a collection of Python-based scraping projects develop
 ## **Screenshots**
 
 ### DealsHunter UI  
-![DealsHunter UI](https://github.com/user-attachments/assets/d3af01d7-b3a2-440e-b18b-9185e3cfc8f9)  
+![1](https://github.com/user-attachments/assets/781865b4-bcb6-4f40-9e8d-202f098460bf)
+![2](https://github.com/user-attachments/assets/5e9be00b-465b-4e88-b5a6-247e8cd7a326)
+![3](https://github.com/user-attachments/assets/71f04d8d-eac9-44df-9213-b5df12e75264)
+![4](https://github.com/user-attachments/assets/c0052a1f-2b98-44a0-909c-a280243a089d)
+
 
 ### Public Libraries Data Viewer  
-![Library Viewer](https://github.com/user-attachments/assets/bb9e0d2c-182a-4952-bd05-455fe197b0c8)  
+![1](https://github.com/user-attachments/assets/02f23cbe-203a-43ac-936e-c9fb1e98988e)
+![2](https://github.com/user-attachments/assets/869115ba-26da-4d1e-9795-7473ea2036b9)
+![3](https://github.com/user-attachments/assets/b484f595-8391-49d7-8f6c-ca706a108e6e)
+![4](https://github.com/user-attachments/assets/05038514-0fc8-4583-bb7d-c77885c19ed9)
+![5](https://github.com/user-attachments/assets/a9d2cb0b-f62f-41c7-aa87-ac83e1efff2f)
+
 
 ### Behance Job Listings Viewer  
-![Behance Viewer](https://github.com/user-attachments/assets/6ec4b6a8-52e5-4ae4-97cc-69cc037f6b33)  
+![1](https://github.com/user-attachments/assets/9f774e75-0c78-46e0-93da-00b724c7a3b2)
+![2](https://github.com/user-attachments/assets/31b4c7f0-0cc6-461c-bce8-a2804ae7525c)
+![3](https://github.com/user-attachments/assets/62b726d8-106a-4340-8bf9-66602acd8d22)
+![4](https://github.com/user-attachments/assets/ab2d9f78-d326-48b7-baa7-6de19675acce)
+![5](https://github.com/user-attachments/assets/009e7ff6-d515-43b3-9a1e-c19fa412eaf6)
+![6](https://github.com/user-attachments/assets/6a4aeb22-83e6-481a-a670-acfe757c0325)
+![7](https://github.com/user-attachments/assets/0934e7fa-5a0b-414d-b930-f2f65b424e65)
+
+
 
 ---
 

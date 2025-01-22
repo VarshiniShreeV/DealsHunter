@@ -1,99 +1,99 @@
-# DealsHunter
+# **Scraping Projects**
 
-This project is built during my python stack internship @ Infosys Springboard.
-
-### Dependencies:
-1. Python (version: 3.13.0 or above)
-2. Python IDE (Visual Studio Code / PyCharm / IDLE / Eclipse)
-3. Libraries : Streamlit, Beatiful Soup, Selenium 
-
-## Milestone 1
-A website "DealsHunter" is built using streamlit in python, which scrapes the data from the website DealsHeaven[https://dealsheaven.in/] using beautifulsoup and requests libraries.
-
-In the folder Milestone 1 -> Run app.py:
-```
-streamlit run app.py
-```
-
-![Screenshot 2024-11-17 194413](https://github.com/user-attachments/assets/fa5cb83a-9db3-493b-bce6-cc627e67b08e)
+This repository showcases a collection of Python-based scraping projects developed during my Python stack internship at Infosys Springboard. The projects demonstrate the power of automation, dynamic user interfaces, and data extraction from web sources, providing practical solutions for real-world problems.  
 
 
-### Milestone 1 Enhancement
-A status bar is added and the UI is modified for visual appeal. Also, help section is provided.
+---
 
-In the folder Milestone 1 -> Run milestone_1.py:
-```
-streamlit run milestone_1.py
-```
+## **Overview**
 
-![enhance](https://github.com/user-attachments/assets/d3af01d7-b3a2-440e-b18b-9185e3cfc8f9)
+### **1. Deals Hunter**
+- A web scraping application built using **Streamlit** and **BeautifulSoup** to extract deals from [DealsHeaven](https://dealsheaven.in/).  
+- Provides an intuitive user interface with status tracking, enhanced visuals, and a help section for user assistance.  
+- Includes category filtering and dynamic display of deal information such as product details, images, and prices.  
 
-![image](https://github.com/user-attachments/assets/9b957204-dd4a-49b2-bccc-320fda9611a4)
+### **2. Libraries Near You**
+- Scrapes library data from [Public Libraries](https://publiclibraries.com/state/) using **Selenium**.  
+- Data is stored in an **SQLite database** with two relational tables:  
+  - **States:** Contains state IDs and names.  
+  - **Libraries:** Stores library details, including city, address, zip, and phone, linked to the respective state ID.  
+- The GUI, built with **Streamlit**, allows users to select a state and view its libraries dynamically.  
 
+### **3. Behance Job Listings Scraper**
+- Automates job scraping from [Behance Jobs](https://www.behance.net/joblist) using **Selenium**.  
+- Displays job cards with company details, descriptions, and categories.  
+- Implements a **dynamic search bar** with suggestions for filtering job listings based on organizations.  
+- Enhanced user experience with **light and dark themes** and a sidebar for category selection.
 
-## Milestone 2
+---
 
-## DealsHunter
-The DealsHunter website is enhanced further for better user experience and filtering by category is integrated. The products are displayed with their respective images and other details.
+## **Key Features**
 
-In the folder Milestone 2 -> Run milestone_2_t1.py:
-```
-streamlit run milestone_2_t1.py
-```
+- **Web Scraping:**  
+  Extracts data from diverse web sources using **BeautifulSoup** and **Selenium**.  
+- **Data Storage:**  
+  Stores structured data in **SQLite** databases for efficient querying and manipulation.  
+- **Interactive GUIs:**  
+  Dynamic and responsive user interfaces built with **Streamlit** for intuitive navigation.  
+- **Theming:**  
+  Light and dark theme options for better visual customization.  
+- **Automation:**  
+  Seamless integration with automation tools for scraping processes.
 
-![8](https://github.com/user-attachments/assets/d934d2bf-13ed-47bf-b496-dd1ca2c581d0)
-![9](https://github.com/user-attachments/assets/5dd1fa7e-dc4f-46d0-b562-bdb0e264cb6d)
+---
 
-## Public Library
-Using Selenium, we scrape the states and their respective libraries information from the [Public Libraries website](https://publiclibraries.com/state/). Using sqlite3, we store the scraped data in 2 tables, which are related to each other by having common state id. Using selenium, the scraped information of libraries for s specific chosen state is displayed.
+## **Installation Guide**
 
-In the folder Milestone 2 -> Run milestone_2_t2.py:
-```
-streamlit run milestone_2_t2.py
-```
+1. Ensure Python (version 3.8 or above) is installed on your system.  
+2. Clone this repository:
+   ```bash
+   git clone https://github.com/VarshiniShreeV/ScrapingProjects.git
+   ```
+3. Navigate to the project directory:  
+   ```bash
+   cd ScrapingProjects
+   ```
+4. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-### States Table (2 fields: state_id, state_name)
-![L 2](https://github.com/user-attachments/assets/91555d0c-505a-4949-8f51-d8732651f382)
+---
 
-### Libraries Table (7 fields : id, state_id, city, library, address, zip, phone)
-![L 3](https://github.com/user-attachments/assets/bec22b5a-3078-44e4-9ae6-a246241392a1)
+## **How to Run the Applications**
 
-### Schema of the 2 tables in the Data Base libraries_data.db
-![L 4](https://github.com/user-attachments/assets/27197aa4-9c59-4fff-8422-60614acbe3e6)
+### **Deals Hunter**
+1. Navigate to the respective folder.  
+2. Run the main application file:  
+   ```bash
+   streamlit run ui.py
+   ```
 
-### Relation between 2 tables (States (Strong Entity) -> Libraries (Weak Entity)
-![L 5](https://github.com/user-attachments/assets/869fd5e3-b199-47a1-9bd6-31127117379b)
+### **Public Libraries Data**
+1. Run the library scraper to populate the database:  
+   ```bash
+   streamlit run ui.py
+   ```
 
-### GUI using Streamlit
-![L 1](https://github.com/user-attachments/assets/bb9e0d2c-182a-4952-bd05-455fe197b0c8)
-![L 9](https://github.com/user-attachments/assets/f2fd34ea-de9c-4321-b729-f6dd71fab40f)
-![L 7](https://github.com/user-attachments/assets/21d10826-60ce-44b1-92b7-ea1396d4e612)
+### **Behance Job Listings Scraper**
+1. Run the main UI file (scraper and filters integrated):  
+   ```bash
+   streamlit run ui.py
+   ```
 
+---
 
-## Milestone 3
-Using selenium, we scrape the job cards from the [Behance Job Listings](https://www.behance.net/joblist), up until the pages scrolled (here, default 10). Then, a gui is built using streamlit, where a dynamic search bar (which helps you search easier by providing pre-existing options in a drop down), is implemented and the corresponding job listings are displayed as cards.
-So, the scraper file must be executed before ui file, since it scrapes and stores the data.
+## **Screenshots**
 
-In the folder milestone 3 ->
-Run the scraper file:
-```
-python scraper.py
-```
-Then run the ui file:
-```
-streamlit run ui.py
-```
+### DealsHunter UI  
+![DealsHunter UI](https://github.com/user-attachments/assets/d3af01d7-b3a2-440e-b18b-9185e3cfc8f9)  
 
-### GUI : Displaying all the scraped data initially
-![3 1](https://github.com/user-attachments/assets/71334e3b-36e3-4f53-88f1-767977ea6ce5)
--
-### Dynamic Search Assistance
-![3 2](https://github.com/user-attachments/assets/e345bb3a-5114-4b4a-bc47-5597e67d08d6)
--
-### Fetched Results
-![3 3](https://github.com/user-attachments/assets/9b1d3fc4-1aad-4894-bbd1-bdebcb2c5fac)
+### Public Libraries Data Viewer  
+![Library Viewer](https://github.com/user-attachments/assets/bb9e0d2c-182a-4952-bd05-455fe197b0c8)  
 
+### Behance Job Listings Viewer  
+![Behance Viewer](https://github.com/user-attachments/assets/6ec4b6a8-52e5-4ae4-97cc-69cc037f6b33)  
 
+---
 
-
-
+## [Demo Video](https://drive.google.com/file/d/1Z6UufS6qM9LyfkB-ifjfQ1M_ItDDnr8L/view?pli=1)
